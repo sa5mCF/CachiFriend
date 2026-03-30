@@ -29,8 +29,12 @@ class HomeViewModel: ObservableObject {
     var totalIncome: Double = 0
     var totalOutcome: Double = 0
     let filters: [FilterItemModel] = [.today, .week, .month, .year]
-    // TODO: Replace By DB
-    let mockRecords = MockRecordsHelper.mockRecords()
+    
+    let databaseService: DataBasesServiceProtocol
+    
+    init(_ databaseService: DataBasesServiceProtocol) {
+        self.databaseService = databaseService
+    }
 
     var totalIncomeText: String {
         return "$\(self.totalIncome.toMoneyAmount())"
@@ -46,22 +50,24 @@ class HomeViewModel: ObservableObject {
     }
 
     func getTotals() {
-        // TODO: - to change to get data of DB
         self.loadingTotals = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            self.totalIncome = 10000000
-            self.totalOutcome = 500000
-            self.loadingTotals = false
+        Task {
+            let totals = await self.databaseService.getTotals()
+            self.totalIncome = totals.income
+            self.totalOutcome = totals.outcome
+            await MainActor.run {
+                self.loadingTotals = false
+            }
         }
     }
 
     func getRecords() {
-        // TODO: - to change to get data of DB
         self.loading = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.records = MockRecordsHelper.applyFilter(to: self.mockRecords,
-                                                            by: self.activeFilter)
-            self.loading = false
+        Task {
+            self.records = await self.databaseService.fetchRecords(filter: self.activeFilter)
+            await MainActor.run {
+                self.loading = false
+            }
         }
     }
 
