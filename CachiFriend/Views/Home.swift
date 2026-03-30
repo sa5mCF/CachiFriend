@@ -29,7 +29,7 @@ struct HomeView: View {
                 .navigationDestination(for: HomeNavigationRoute.self) { route in
                     switch route {
                     case .recordDetail(let record):
-                        RecordDetailView(viewModel: RecordDetailViewModel(record: record))
+                        RecordDetailView(viewModel: RecordDetailViewModel(self.viewModel.databaseService, record: record))
                     }
                 }
                 .onAppear {
@@ -38,7 +38,7 @@ struct HomeView: View {
                 .sheet(item: self.$viewModel.sheet) { item in
                     switch item {
                     case .newRecord:
-                        FormRecordView(viewModel: FormRecordViewModel())
+                        FormRecordView(viewModel: FormRecordViewModel(self.viewModel.databaseService))
                     }
                 }
             }
@@ -120,5 +120,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(viewModel: HomeViewModel())
+    HomeView(viewModel: HomeViewModel(MockDataBaseService()))
 }

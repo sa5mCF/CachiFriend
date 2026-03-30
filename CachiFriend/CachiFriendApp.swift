@@ -11,9 +11,11 @@ import SwiftData
 @main
 struct CachiFriendApp: App {
 
+    let dataBaseService: DataBasesServiceProtocol = MockDataBaseService()
+    
     var body: some Scene {
         WindowGroup {
-            HomeView(viewModel: HomeViewModel())
+            HomeView(viewModel: HomeViewModel(dataBaseService))
         }
     }
 }

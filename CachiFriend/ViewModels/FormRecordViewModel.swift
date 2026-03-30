@@ -19,8 +19,11 @@ class FormRecordViewModel: ObservableObject {
     let record: RecordModel?
     private let maxDigits = 10
     private let maxDecimals = 2
+    
+    let dataBaseService: DataBasesServiceProtocol
 
-    init(record: RecordModel? = nil) {
+    init(_ databaseService: DataBasesServiceProtocol, record: RecordModel? = nil) {
+        self.dataBaseService = databaseService
         self.record = record
         self.setUpInfoIfNeeded()
     }
@@ -80,10 +83,16 @@ class FormRecordViewModel: ObservableObject {
                                         date: record.date,
                                         type: record.type,
                                         amount: amountDouble)
-            // TODO: Update to record exist on DB
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                self.loading = false
-                completion()
+            Task {
+                let saved = await self.dataBaseService.updateRecord(recordToUpdate)
+                if saved {
+                    await MainActor.run {
+                        self.loading = false
+                        completion()
+                    }
+                } else {
+                    print("error saving")
+                }
             }
         } else {
             let recordToSave = RecordModel(id: UUID().uuidString,
@@ -91,10 +100,16 @@ class FormRecordViewModel: ObservableObject {
                                       date: Date(),
                                       type: self.selectedType,
                                       amount: amountDouble)
-            // TODO: save new record in BD
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                self.loading = false
-                completion()
+            Task {
+                let saved = await self.dataBaseService.saveRecord(recordToSave)
+                if saved {
+                    await MainActor.run {
+                        self.loading = false
+                        completion()
+                    }
+                } else {
+                    print("error saving")
+                }
             }
         }
     }
