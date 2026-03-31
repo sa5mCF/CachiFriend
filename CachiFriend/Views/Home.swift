@@ -35,7 +35,9 @@ struct HomeView: View {
                 .onAppear {
                     self.viewModel.getInitialData()
                 }
-                .sheet(item: self.$viewModel.sheet) { item in
+                .sheet(item: self.$viewModel.sheet, onDismiss: {
+                    self.viewModel.getInitialData()
+                }) { item in
                     switch item {
                     case .newRecord:
                         FormRecordView(viewModel: FormRecordViewModel(self.viewModel.databaseService))

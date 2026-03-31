@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum RcordType: String, Identifiable {
+enum RecordType: String, Identifiable {
     var id: String { rawValue }
     case income = "INCOME"
     case outcome = "OUTCOME"
@@ -24,6 +24,6 @@ struct RecordModel: Identifiable, Hashable {
     let id: String
     let title: String
     let date: Date
-    let type: RcordType
+    let type: RecordType
     let amount: Double
 }
