@@ -38,7 +38,7 @@ struct MockRecordsHelper {
         let now = Date()
 
         return (0..<count).map { _ in
-            let type = Double.random(in: 0...1) < 0.6 ? RcordType.outcome : RcordType.income
+            let type = Double.random(in: 0...1) < 0.6 ? RecordType.outcome : RecordType.income
 
             let category = type == .income ?
             incomeCategories.randomElement()! :

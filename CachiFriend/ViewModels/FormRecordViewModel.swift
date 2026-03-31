@@ -11,11 +11,11 @@ import Combine
 class FormRecordViewModel: ObservableObject {
 
     @Published var loading = false
-    @Published var selectedType: RcordType = .income
+    @Published var selectedType: RecordType = .income
     @Published var title: String = ""
     @Published var amount: String = ""
 
-    let types: [RcordType] = [.income, .outcome]
+    let types: [RecordType] = [.income, .outcome]
     let record: RecordModel?
     private let maxDigits = 10
     private let maxDecimals = 2
@@ -64,13 +64,13 @@ class FormRecordViewModel: ObservableObject {
         amount = filtered
     }
 
-    func typeSelected(_ type: RcordType) {
+    func typeSelected(_ type: RecordType) {
         if self.record == nil {
             self.selectedType = type
         }
     }
 
-    func isSelectedType(_ type: RcordType) -> Bool {
+    func isSelectedType(_ type: RecordType) -> Bool {
         self.selectedType == type
     }
 

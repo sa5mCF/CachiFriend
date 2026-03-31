@@ -25,7 +25,7 @@ struct RecordCellViewModel {
         "$\(record.amount.toMoneyAmount())"
     }
 
-    var type: RcordType {
+    var type: RecordType {
         record.type
     }
 }
