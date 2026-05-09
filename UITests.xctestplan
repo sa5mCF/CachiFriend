@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "7D2865F4-4359-4C49-87D2-64458E0B058C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CachiFriend.xcodeproj",
+        "identifier" : "2FAABF122FAEE0110090137A",
+        "name" : "UITests"
+      }
+    }
+  ],
+  "version" : 1
+}

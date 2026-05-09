@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "3844A7DA-12AF-4F89-86F4-0D05D8DF6F69",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CachiFriend.xcodeproj",
+      "identifier" : "2F735ECD2F77C37E003AE436",
+      "name" : "CachiFriend"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "skippedTests" : [
+        "ServiceTests",
+        "ServiceTests\/testExample()",
+        "ServiceTests\/testPerformanceExample()"
+      ],
+      "target" : {
+        "containerPath" : "container:CachiFriend.xcodeproj",
+        "identifier" : "2FAABF052FAEDFB70090137A",
+        "name" : "ServiceTests"
+      }
+    }
+  ],
+  "version" : 1
+}
