@@ -6,14 +6,81 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2FAABEF12FAEDE9C0090137A /* WiFiInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAABEF02FAEDE9C0090137A /* WiFiInfrastructure.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FAABEF92FAEDE9C0090137A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F735EC62F77C37E003AE436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FAABEED2FAEDE9C0090137A;
+			remoteInfo = CachiFriendTests;
+		};
+		2FAABF0A2FAEDFB70090137A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F735EC62F77C37E003AE436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F735ECD2F77C37E003AE436;
+			remoteInfo = CachiFriend;
+		};
+		2FAABF192FAEE0110090137A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F735EC62F77C37E003AE436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F735ECD2F77C37E003AE436;
+			remoteInfo = CachiFriend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2FAABEE72FAED7D80090137A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAABF012FAEDE9C0090137A /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2F735ECE2F77C37E003AE436 /* CachiFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CachiFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAABEEE2FAEDE9C0090137A /* CachiFriendTests.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; name = CachiFriendTests.appex; path = "/Users/samchavez/Documents/dev/swift/CachiFriend/build/Debug-iphoneos/CachiFriendTests.appex"; sourceTree = "<absolute>"; };
+		2FAABEF02FAEDE9C0090137A /* WiFiInfrastructure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WiFiInfrastructure.framework; path = System/Library/Frameworks/WiFiInfrastructure.framework; sourceTree = SDKROOT; };
+		2FAABEFC2FAEDE9C0090137A /* CachiFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CachiFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAABF062FAEDFB70090137A /* ServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAABF132FAEE0110090137A /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAABF1E2FAEE0F40090137A /* CachiFriendTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CachiFriendTests.xctestplan; sourceTree = "<group>"; };
+		2FAABF1F2FAEE19F0090137A /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2F735ED02F77C37E003AE436 /* CachiFriend */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CachiFriend;
+			sourceTree = "<group>";
+		};
+		2FAABF072FAEDFB70090137A /* ServiceTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ServiceTests;
+			sourceTree = "<group>";
+		};
+		2FAABF142FAEE0110090137A /* UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,23 +93,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FAABEEB2FAEDE9C0090137A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FAABEF12FAEDE9C0090137A /* WiFiInfrastructure.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAABF032FAEDFB70090137A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAABF102FAEE0110090137A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2F735EC52F77C37E003AE436 = {
 			isa = PBXGroup;
 			children = (
+				2FAABF1E2FAEE0F40090137A /* CachiFriendTests.xctestplan */,
+				2FAABF1F2FAEE19F0090137A /* UITests.xctestplan */,
 				2F735ED02F77C37E003AE436 /* CachiFriend */,
-				2F735ECF2F77C37E003AE436 /* Products */,
+				2FAABF072FAEDFB70090137A /* ServiceTests */,
+				2FAABF142FAEE0110090137A /* UITests */,
+				2FAABEEF2FAEDE9C0090137A /* Frameworks */,
+				2FAABEFC2FAEDE9C0090137A /* CachiFriend.app */,
+				2FAABF062FAEDFB70090137A /* ServiceTests.xctest */,
+				2FAABF132FAEE0110090137A /* UITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
-		2F735ECF2F77C37E003AE436 /* Products */ = {
+		2FAABEEF2FAEDE9C0090137A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F735ECE2F77C37E003AE436 /* CachiFriend.app */,
+				2FAABEF02FAEDE9C0090137A /* WiFiInfrastructure.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +151,13 @@
 				2F735ECA2F77C37E003AE436 /* Sources */,
 				2F735ECB2F77C37E003AE436 /* Frameworks */,
 				2F735ECC2F77C37E003AE436 /* Resources */,
+				2FAABEE72FAED7D80090137A /* Embed Frameworks */,
+				2FAABF012FAEDE9C0090137A /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2FAABEFA2FAEDE9C0090137A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				2F735ED02F77C37E003AE436 /* CachiFriend */,
@@ -67,8 +166,73 @@
 			packageProductDependencies = (
 			);
 			productName = CachiFriend;
-			productReference = 2F735ECE2F77C37E003AE436 /* CachiFriend.app */;
+			productReference = 2FAABEFC2FAEDE9C0090137A /* CachiFriend.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2FAABEED2FAEDE9C0090137A /* CachiFriendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FAABEFE2FAEDE9C0090137A /* Build configuration list for PBXNativeTarget "CachiFriendTests" */;
+			buildPhases = (
+				2FAABEEA2FAEDE9C0090137A /* Sources */,
+				2FAABEEB2FAEDE9C0090137A /* Frameworks */,
+				2FAABEEC2FAEDE9C0090137A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CachiFriendTests;
+			packageProductDependencies = (
+			);
+			productName = CachiFriendTests;
+			productReference = 2FAABEEE2FAEDE9C0090137A /* CachiFriendTests.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		2FAABF052FAEDFB70090137A /* ServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FAABF0C2FAEDFB70090137A /* Build configuration list for PBXNativeTarget "ServiceTests" */;
+			buildPhases = (
+				2FAABF022FAEDFB70090137A /* Sources */,
+				2FAABF032FAEDFB70090137A /* Frameworks */,
+				2FAABF042FAEDFB70090137A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FAABF0B2FAEDFB70090137A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2FAABF072FAEDFB70090137A /* ServiceTests */,
+			);
+			name = ServiceTests;
+			packageProductDependencies = (
+			);
+			productName = ServiceTests;
+			productReference = 2FAABF062FAEDFB70090137A /* ServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2FAABF122FAEE0110090137A /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FAABF1B2FAEE0110090137A /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				2FAABF0F2FAEE0110090137A /* Sources */,
+				2FAABF102FAEE0110090137A /* Frameworks */,
+				2FAABF112FAEE0110090137A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FAABF1A2FAEE0110090137A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2FAABF142FAEE0110090137A /* UITests */,
+			);
+			name = UITests;
+			packageProductDependencies = (
+			);
+			productName = UITests;
+			productReference = 2FAABF132FAEE0110090137A /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +247,17 @@
 					2F735ECD2F77C37E003AE436 = {
 						CreatedOnToolsVersion = 26.4;
 					};
+					2FAABEED2FAEDE9C0090137A = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					2FAABF052FAEDFB70090137A = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 2F735ECD2F77C37E003AE436;
+					};
+					2FAABF122FAEE0110090137A = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 2F735ECD2F77C37E003AE436;
+					};
 				};
 			};
 			buildConfigurationList = 2F735EC92F77C37E003AE436 /* Build configuration list for PBXProject "CachiFriend" */;
@@ -95,17 +270,41 @@
 			mainGroup = 2F735EC52F77C37E003AE436;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 2F735ECF2F77C37E003AE436 /* Products */;
+			productRefGroup = 2F735EC52F77C37E003AE436;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2F735ECD2F77C37E003AE436 /* CachiFriend */,
+				2FAABEED2FAEDE9C0090137A /* CachiFriendTests */,
+				2FAABF052FAEDFB70090137A /* ServiceTests */,
+				2FAABF122FAEE0110090137A /* UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2F735ECC2F77C37E003AE436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAABEEC2FAEDE9C0090137A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAABF042FAEDFB70090137A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAABF112FAEE0110090137A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +321,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2FAABEEA2FAEDE9C0090137A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAABF022FAEDFB70090137A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FAABF0F2FAEE0110090137A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FAABEFA2FAEDE9C0090137A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FAABEED2FAEDE9C0090137A /* CachiFriendTests */;
+			targetProxy = 2FAABEF92FAEDE9C0090137A /* PBXContainerItemProxy */;
+		};
+		2FAABF0B2FAEDFB70090137A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F735ECD2F77C37E003AE436 /* CachiFriend */;
+			targetProxy = 2FAABF0A2FAEDFB70090137A /* PBXContainerItemProxy */;
+		};
+		2FAABF1A2FAEE0110090137A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F735ECD2F77C37E003AE436 /* CachiFriend */;
+			targetProxy = 2FAABF192FAEE0110090137A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2F735ED92F77C37F003AE436 /* Debug */ = {
@@ -306,6 +544,140 @@
 			};
 			name = Release;
 		};
+		2FAABEFF2FAEDE9C0090137A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CachiFriendTests/CachiFriendTests.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CachiFriendTests/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CachiFriendTests;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.CachiFriend.CachiFriendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FAABF002FAEDE9C0090137A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CachiFriendTests/CachiFriendTests.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CachiFriendTests/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CachiFriendTests;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.CachiFriend.CachiFriendTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2FAABF0D2FAEDFB70090137A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.CachiFriend.ServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CachiFriend.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CachiFriend";
+			};
+			name = Debug;
+		};
+		2FAABF0E2FAEDFB70090137A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.CachiFriend.ServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CachiFriend.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CachiFriend";
+			};
+			name = Release;
+		};
+		2FAABF1C2FAEE0110090137A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.CachiFriend.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CachiFriend;
+			};
+			name = Debug;
+		};
+		2FAABF1D2FAEE0110090137A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sam.CachiFriend.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CachiFriend;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +695,33 @@
 			buildConfigurations = (
 				2F735EDC2F77C37F003AE436 /* Debug */,
 				2F735EDD2F77C37F003AE436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FAABEFE2FAEDE9C0090137A /* Build configuration list for PBXNativeTarget "CachiFriendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FAABEFF2FAEDE9C0090137A /* Debug */,
+				2FAABF002FAEDE9C0090137A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FAABF0C2FAEDFB70090137A /* Build configuration list for PBXNativeTarget "ServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FAABF0D2FAEDFB70090137A /* Debug */,
+				2FAABF0E2FAEDFB70090137A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FAABF1B2FAEE0110090137A /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FAABF1C2FAEE0110090137A /* Debug */,
+				2FAABF1D2FAEE0110090137A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
