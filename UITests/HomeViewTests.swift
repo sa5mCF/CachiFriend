@@ -23,4 +23,15 @@ final class HomeViewTests: XCTestCase {
     override func tearDownWithError() throws {
         app = nil
     }
+    
+    func testHomeView_ElementsExists() {
+        let appTitle = app.staticTexts["AppTitle"]
+
+        XCTAssertTrue(appTitle.exists)
+        XCTAssertEqual(appTitle.label, "Cachi Friend")
+        
+        let addRecordButton = app.buttons["AddRecordButton"]
+        XCTAssertTrue(addRecordButton.exists)
+
+    }
 }

@@ -51,7 +51,7 @@ struct HomeView: View {
     private var Header: some View {
         VStack(alignment: .leading, spacing: 16)  {
             HStack(alignment: .center) {
-                Text("Chanchi Friend")
+                Text("Cachi Friend")
                     .foregroundStyle(Color.dark)
                     .accessibilityIdentifier("AppTitle")
                 Spacer()
