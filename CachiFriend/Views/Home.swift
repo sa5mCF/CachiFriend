@@ -53,12 +53,14 @@ struct HomeView: View {
             HStack(alignment: .center) {
                 Text("Chanchi Friend")
                     .foregroundStyle(Color.dark)
+                    .accessibilityIdentifier("AppTitle")
                 Spacer()
                 Button(action: {
                     self.viewModel.newRecord()
                 }) {
                     IconImage(.plus)
                 }
+                .accessibilityIdentifier("AddRecordButton")
             }
             VStack(alignment: .leading, spacing: 0)  {
                 Text("Bienvenido de nuevo.")
@@ -79,6 +81,7 @@ struct HomeView: View {
                          status: self.viewModel.isFilterSelected(filter) ? .selected : .unselected) {
                         self.viewModel.filterSelected(filter)
                     }
+                         .accessibilityIdentifier("Filter_\(filter.label)_\(self.viewModel.isFilterSelected(filter) ? "selected" : "unselected")")
                 }
             }.padding(.horizontal)
         }
@@ -91,12 +94,14 @@ struct HomeView: View {
                     topText: "Tus ingresos",
                     bottomText: self.viewModel.totalIncomeText,
                     height: cardHeight)
+            .accessibilityIdentifier("incomeCard")
 
             BigCard(loading: self.viewModel.loadingTotals,
                     topText: "Tus gastos",
                     bottomText: self.viewModel.totalOutcomeText,
                     height: cardHeight,
                     color: .secondary)
+            .accessibilityIdentifier("outcomeCard")
         }.padding(.horizontal)
     }
 
@@ -113,6 +118,7 @@ struct HomeView: View {
                             self.viewModel.goToDetail(record)
                         }) {
                             RecordCellView(viewModel: RecordCellViewModel(record: record))
+                                .accessibilityIdentifier("Record_\(record.id)")
                         }
                     }
                 }

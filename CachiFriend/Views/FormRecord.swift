@@ -47,6 +47,7 @@ struct FormRecordView: View {
             }
             Text("Nuevo registro")
                 .foregroundStyle(Color.dark)
+                .accessibilityIdentifier("FormRecordTitle")
         }.padding(.horizontal)
     }
 
