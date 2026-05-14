@@ -24,9 +24,11 @@ struct RecordDetailView: View {
                     SecondaryButton(label: "Eliminar") {
                         self.viewModel.showDeleteRecordAlert()
                     }
+                    .accessibilityIdentifier("RecordDetailDeleteButton")
                     PrimaryButton(label: "Editar") {
                         self.viewModel.updateRecord()
                     }
+                    .accessibilityIdentifier("RecordDetailUpdateButton")
                 }.padding()
             }
             if viewModel.loading {

@@ -58,7 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2FAABEEE2FAEDE9C0090137A /* CachiFriendTests.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; name = CachiFriendTests.appex; path = "/Users/samchavez/Documents/dev/swift/CachiFriend/build/Debug-iphoneos/CachiFriendTests.appex"; sourceTree = "<absolute>"; };
+		2F2E1D132FB5895C008C0D97 /* CachiFriendTests.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = CachiFriendTests.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAABEF02FAEDE9C0090137A /* WiFiInfrastructure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WiFiInfrastructure.framework; path = System/Library/Frameworks/WiFiInfrastructure.framework; sourceTree = SDKROOT; };
 		2FAABEFC2FAEDE9C0090137A /* CachiFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CachiFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAABF062FAEDFB70090137A /* ServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +130,7 @@
 				2FAABEFC2FAEDE9C0090137A /* CachiFriend.app */,
 				2FAABF062FAEDFB70090137A /* ServiceTests.xctest */,
 				2FAABF132FAEE0110090137A /* UITests.xctest */,
+				2F2E1D132FB5895C008C0D97 /* CachiFriendTests.appex */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,7 +186,7 @@
 			packageProductDependencies = (
 			);
 			productName = CachiFriendTests;
-			productReference = 2FAABEEE2FAEDE9C0090137A /* CachiFriendTests.appex */;
+			productReference = 2F2E1D132FB5895C008C0D97 /* CachiFriendTests.appex */;
 			productType = "com.apple.product-type.extensionkit-extension";
 		};
 		2FAABF052FAEDFB70090137A /* ServiceTests */ = {
